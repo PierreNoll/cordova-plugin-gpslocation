@@ -119,7 +119,7 @@ public class CordovaGPSLocation extends CordovaPlugin {
 							: null) : null));
 			o.put("velocity", loc.getSpeed());
 			o.put("altitudeAccuracy",
-					(loc.hasVerticalAccuracy() ? loc.getVerticalAccuracyMeters() : null);
+					(loc.hasVerticalAccuracy() ? loc.getVerticalAccuracyMeters() : null));
 			o.put("timestamp", loc.getTime());
 		} catch (JSONException e) {
 			e.printStackTrace();
